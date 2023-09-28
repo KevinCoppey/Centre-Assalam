@@ -55,6 +55,11 @@
  * #RESET
 \*-----------------------------------*/
 
+@font-face {
+  font-family: "Frankfurter";
+  src: url(../fonts/Frankfurter.otf);
+}
+
 *,
 *::before,
 *::after {
@@ -320,6 +325,23 @@ body {
  * #HEADER
 \*-----------------------------------*/
 
+.title {
+  font-family: "Frankfurter";
+  font-style: italic;
+  font-size: 100%;
+  color: var(--islam-yellow);
+}
+
+.row-title1 {
+  display: inline-block;
+  margin-right: 50px;
+  width: 2px;
+}
+.row-title2 {
+  display: inline-block;
+  width: 2;
+}
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -340,7 +362,7 @@ header {
   position: relative;
   padding: 3px 0;
   z-index: 2;
-  color: white;
+  background-color: var(--white-2);
 }
 
 header .container {
@@ -425,7 +447,7 @@ header .container {
 }
 
 .hero-text {
-  font-size: var(--fs-4);
+  font-size: 1400;
   color: var(--black);
 }
 
@@ -827,6 +849,10 @@ footer .logo {
    * HEADER 
    */
 
+  .title {
+    font-size: 15px;
+  }
+
   .navbar {
     left: auto;
     width: 300px;
@@ -926,6 +952,9 @@ footer .logo {
    * HEADER
    */
 
+  .title {
+    font-size: 20px;
+  }
   .navbar-wrapper {
     position: relative;
   }
@@ -1040,9 +1069,13 @@ footer .logo {
    * HEADER
    */
 
-   #faireundon{
+  .title {
+    font-size: 15px;
+    padding-left:70px;
+  }
+  #faireundon {
     display: none;
-   }
+  }
 
   .navbar-menu-btn {
     display: none;
@@ -1220,10 +1253,9 @@ footer .logo {
    * REUSED STYLE
    */
 
-
-   #faireundon{
+  #faireundon {
     display: none;
-   }
+  }
 
   .container {
     max-width: 1150px;
