@@ -5,22 +5,26 @@
  */
 const menuToggleBtn = document.querySelector("[data-navbar-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
-
+const burger = document.getElementById("burger");
 /**
  * element toggle function
  */
 
-const elemToggleFunc = function (elem) {
-  elem.classList.toggle("active");
+burger.onclick = function () {
+  if (navbar.classList.contains("active")) {
+    navbar.classList.remove("active");
+  } else {
+    navbar.classList.add("active");
+  }
 };
 
-menuToggleBtn.addEventListener("click", function () {
-  elemToggleFunc(navbar);
+document.addEventListener("click", function (event) {
+  if (event.target != burger) {
+    navbar.classList.remove("active");
+  }
 });
 
-/**
- * go to top
- */
+//-------------GoToTopButton------------
 
 const goTopBtn = document.querySelector("[data-go-top]");
 
@@ -31,6 +35,8 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+//-------------MODAL------------
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -57,3 +63,25 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+//-------------FIX HEADER------------
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.scrollY > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

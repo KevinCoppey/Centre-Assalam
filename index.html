@@ -37,11 +37,11 @@
     - #HEADER
   -->
 
-    <header>
+    <header id="myHeader">
       <div class="container">
         <a href="#" class="logo">
           <img
-            onclick="window.location.reload();"
+            onclick="window.scrollTop(0);"
             src="./assets/images/assalam_logo.png"
             width="100"
             height="100"
@@ -50,7 +50,7 @@
 
         <div class="navbar-wrapper">
           <button class="navbar-menu-btn" data-navbar-toggle-btn>
-            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="menu-outline" id="burger"></ion-icon>
           </button>
 
           <nav class="navbar" data-navbar>
@@ -66,14 +66,16 @@
               <li class="nav-item">
                 <a href="#service" class="nav-link">Nos services</a>
               </li>
-
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contactez-nous</a>
+              <li class="nav-item" id="faireundon">
+                <a href="#don" class="nav-link">Faire un Don</a>
               </li>
             </ul>
 
             <button class="btn btn-primary">
-              <a href="#don" class="nav-link" style="color: white;">Faire un don</a></button>
+              <a href="#don" class="nav-link" style="color: white"
+                >Faire un don</a
+              >
+            </button>
           </nav>
         </div>
       </div>
@@ -88,7 +90,7 @@
         <section class="hero" id="home">
           <div class="container">
             <div class="hero-content">
-              <h1 class="h1 hero-title">السلام عليكم    Assalam alaykoum</h1>
+              <h1 class="h1 hero-title">السلام عليكم <br />Assalam alaykoum</h1>
 
               <p class="hero-text">
                 Bienvenue chez Assalam pour la Promotion de l'Islam en Valais,
@@ -135,8 +137,9 @@
 
               <p class="section-text">
                 Nous sommes une organisation à but non-lucratif visant à
-                promouvoir l'apprentissage de l'islam et de sa culture. Nous oeuvrons
-                à faire connaître l'Islam dans le respect avec une approche pédagogique.
+                promouvoir l'apprentissage de l'islam et de sa culture. Nous
+                oeuvrons à faire connaître l'Islam dans le respect avec une
+                approche pédagogique.
               </p>
               <h2 class="h2 section-title">Notre vision</h2>
               <ul class="about-list">
@@ -149,7 +152,10 @@
                     <h3 class="h3 card-title">Rassembler</h3>
 
                     <p class="card-text">
-                      Assalam souhaite unir et offrir assistance au comité musulman ou arabophone, ainsi qu'à toutes les personnes du canton du Valais qui aspirent à adhérer à notre association.
+                      Assalam souhaite unir et offrir assistance au comité
+                      musulman ou arabophone, ainsi qu'à toutes les personnes du
+                      canton du Valais qui aspirent à adhérer à notre
+                      association.
                     </p>
                   </div>
                 </li>
@@ -163,7 +169,9 @@
                     <h3 class="h3 card-title">Intégrer</h3>
 
                     <p class="card-text">
-                      L'association aspire à faciliter l'intégration culturelle en Suisse pour la communauté musulmane et arabophone, qui cherchent à s'adapter à la société suisse.
+                      L'association aspire à faciliter l'intégration culturelle
+                      en Suisse pour la communauté musulmane et arabophone, qui
+                      cherchent à s'adapter à la société suisse.
                     </p>
                   </div>
                 </li>
@@ -174,23 +182,24 @@
                       <ion-icon name="bulb-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">
-                      Harmoniser
-                    </h3>
+                    <h3 class="h3 card-title">Harmoniser</h3>
 
                     <p class="card-text">
-                      Nous souhaitons répondre de manière appropriée aux aspirations religieuses et culturelles de la population, en conformité avec la législation suisse.
+                      Nous souhaitons répondre de manière appropriée aux
+                      aspirations religieuses et culturelles de la population,
+                      en conformité avec la législation suisse.
                     </p>
                   </div>
                 </li>
               </ul>
             </div>
-
-            <div class="about-top">
-              <h1 class="h2 section-title">"Aujourd'hui, j'ai parachevé votre religion et vous ai accordé mon entier bienfait. J'agrée pour vous l'Islam, comme religion."</h1>
-              <p class="section-text">
-                Sourate Maida n°5 verset 3
-              </p>
+          </div>
+          <div class="about-top">
+            <h1 class="h2 section-title">
+              "Aujourd'hui, j'ai parachevé votre religion et vous ai accordé mon
+              entier bienfait. J'agrée pour vous l'Islam, comme religion."
+            </h1>
+            <p class="section-text">Sourate Maida n°5 verset 3</p>
           </div>
         </section>
 
@@ -202,7 +211,9 @@
           <h1 class="h1 section-title">Nos services</h1>
           <div class="container">
             <p class="section-text">
-              Assalam a coeur de vous proposer une large gamme de service et d'activité pour les petits et grands afin de garantir le rassemblement, l'intégration et l'harmonisation.
+              Assalam a coeur de vous proposer une large gamme de service et
+              d'activité pour les petits et grands afin de garantir le
+              rassemblement, l'intégration et l'harmonisation.
             </p>
 
             <ul class="features-list">
@@ -218,51 +229,45 @@
                   <h3 class="h2 item-title">Apprenez enfin l'arabe !</h3>
 
                   <p class="item-text">
-                    Assalam propose des cours de langue et de perfectionnement pour vous aider à lire, parler et comprendre l'arabe. Ces cours sont diponible autant pour les grands que pour les plus petits.
+                    Assalam propose des cours de langue et de perfectionnement
+                    pour vous aider à lire, parler et comprendre l'arabe. Ces
+                    cours sont diponible autant pour les grands que pour les
+                    plus petits.
                   </p>
                 </div>
               </li>
 
-              <li class="features-item" style="flex-direction: row-reverse;">
+              <li class="features-item" style="flex-direction: row-reverse">
                 <figure class="features-item-banner">
-                  <img
-                    src="./assets/images/pray.jpg"
-                    alt="feature banner"
-                  />
+                  <img src="./assets/images/pray.jpg" alt="feature banner" />
                 </figure>
 
                 <div class="feature-item-content">
-                  <h3 class="h2 item-title">
-                    Evoluez sprituellement
-                  </h3>
+                  <h3 class="h2 item-title">Evoluez sprituellement</h3>
 
                   <p class="item-text">
-                    Au sein de l'association, vous pourrez compter sur un local de prière dédié à vos besoins spirituels. De plus, nous proposons un large choix d'ouvrages pour vous enrichir.
+                    Au sein de l'association, vous pourrez compter sur un local
+                    de prière dédié à vos besoins spirituels. De plus, nous
+                    proposons un large choix d'ouvrages pour vous enrichir.
                   </p>
                 </div>
-                
               </li>
 
               <li class="features-item">
                 <figure class="features-item-banner">
-                  <img
-                    src="./assets/images/sport.jpg"
-                    alt="feature banner"
-                  />
+                  <img src="./assets/images/sport.jpg" alt="feature banner" />
                 </figure>
 
                 <div class="feature-item-content">
-                  <h3 class="h2 item-title">
-                    Restez en forme
-                  </h3>
+                  <h3 class="h2 item-title">Restez en forme</h3>
 
                   <p class="item-text">
-                    Venez profiter des activités sportives et socioculturelles que nous proposons à nos membres et aux familles. Nous suivons la devise : "Un corps sain dans un esprit sain".
+                    Venez profiter des activités sportives et socioculturelles
+                    que nous proposons à nos membres et aux familles. Nous
+                    suivons la devise : "Un corps sain dans un esprit sain".
                   </p>
                 </div>
-                
               </li>
-              
             </ul>
           </div>
         </section>
@@ -271,122 +276,47 @@
         - #CTA
       -->
 
-        <section class="cta" id ="don">
+        <section class="cta" id="don">
           <div class="container">
             <div class="cta-card">
               <h3 class="cta-title">Nous soutenir !</h3>
               <p class="cta-text">
-                Nous avons besoin de vous pour faire grandir et prospérer notre association. Toutes les aides sont les bienvenues !
+                Nous avons besoin de vous pour faire grandir et prospérer notre
+                association. Toutes les aides sont les bienvenues !
               </p>
 
               <button id="myBtn" type="submit" class="btn btn-primary">
-                  Faire un don
+                Faire un don
               </button>
 
               <!-- The Modal -->
               <div id="myModal" class="modal">
-
                 <!-- Modal content -->
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <h1 style="margin-bottom: 50px;">QR Code pour le versement</h1>
+                  <h1 style="margin-bottom: 50px">QR Code pour le versement</h1>
 
                   <div class="row">
                     <div class="column">
-                      <img class="img-modal"
-                                    src="./assets/images/bv_qrcode.png"
-                                    alt="bvr qr code" />
+                      <img
+                        class="img-modal"
+                        src="./assets/images/bv_qrcode.png"
+                        alt="bvr qr code"
+                      />
                     </div>
-                  <div class="column" style="text-align: start;">
-                     <h2>Compte payable à :</h2>
-                       <p>CH86 0900 0000 1620 6193 0 <br> ASSALAM Centre Islamique <br> Route de Sion 6 <br> 3960 Sierre</p>
-  </div>
-</div>
-
-                  
-                  
+                    <div class="column" style="text-align: start">
+                      <h2>Compte payable à :</h2>
+                      <p>
+                        CH86 0900 0000 1620 6193 0 <br />
+                        ASSALAM Centre Islamique <br />
+                        Route de Sion 6 <br />
+                        3960 Sierre
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
               </div>
-
             </div>
-          </div>
-        </section>
-
-        <!-- 
-        - #CONTACT
-      -->
-
-        <section class="contact" id="contact">
-          <div class="container">
-            <div class="contact-content">
-              <h2 class="h2 contact-title">Une question ? N'hésitez pas à nous en faire part</h2>
-
-              <figure class="contact-banner">
-                <img src="./assets/images/contactus.jpg" 
-                width=500px
-                height=300px
-                alt="contact banner" />
-              </figure>
-            </div>
-
-            <form action="" class="contact-form">
-              <div class="input-wrapper">
-                <label for="name" class="input-label">Prénom *</label>
-
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  placeholder="Entrez votre prénom"
-                  class="input-field"
-                />
-              </div>
-
-              <div class="input-wrapper">
-                <label for="phone" class="input-label">Téléphone</label>
-
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Entrez votre numéro de téléphone"
-                  class="input-field"
-                />
-              </div>
-
-              <div class="input-wrapper">
-                <label for="email" class="input-label">Adresse E-Mail *</label>
-
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder="Entrez votre adresse E-Mail"
-                  class="input-field"
-                />
-              </div>
-
-              <div class="input-wrapper">
-                <label for="message" class="input-label"
-                  >Comment pourrions-nous vous aider? *</label
-                >
-
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Entrez votre message"
-                  required
-                  class="input-field"
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
           </div>
         </section>
       </article>
@@ -400,17 +330,22 @@
       <div class="footer-top">
         <div class="container">
           <div class="footer-brand">
-            <a href="#" class="logo">
-              <img src="./assets/images/assalam_logo.png" 
-              width="100px"
-              alt="Assalam logo" />
+            <a class="logo">
+              <img
+                src="./assets/images/assalam_logo.png"
+                width="100px"
+                alt="Assalam logo"
+              />
             </a>
 
             <p class="footer-text">Suivez-nous sur les réseaux</p>
 
             <ul class="social-list">
               <li>
-                <a href="https://instagram.com/codewithsadee" class="social-link">
+                <a
+                  href="https://instagram.com/codewithsadee"
+                  class="social-link"
+                >
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
@@ -422,8 +357,6 @@
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
-
-              
             </ul>
           </div>
 
@@ -432,17 +365,18 @@
               <li>
                 <h3 class="h4 link-title">L'association</h3>
               </li>
-
               <li>
-                <a href="#" class="footer-link">A propos</a>
+                <a href="#home" class="footer-link">Accueil</a>
+              </li>
+              <li>
+                <a href="#about" class="footer-link">A propos</a>
               </li>
 
               <li>
-                <a href="#" class="footer-link">Nos services</a>
+                <a href="#service" class="footer-link">Nos services</a>
               </li>
-
               <li>
-                <a href="#" class="footer-link">Contactez-nous</a>
+                <a href="#don" class="footer-link">Faire un don</a>
               </li>
             </ul>
             <ul class="footer-link-list">
@@ -451,17 +385,29 @@
               </li>
 
               <li>
-                <p href="tel:+41793989228" style=" font-size:15px">☎️+41 79 398 92 28</p>
+                <p href="tel:+41793989228" style="font-size: 15px">
+                  ☎️+41 79 398 92 28
+                </p>
               </li>
               <li>
-                <a href="mailto:contact@assalam-centre.com" style=" font-size:15px">✉️contact@assalam-centre.ch</a>
+                <a
+                  href="mailto:contact@assalam-centre.com"
+                  style="font-size: 15px"
+                  >✉️contact@assalam-centre.ch</a
+                >
               </li>
               <li>
-                <p style=" font-size:15px">🏠Av. du Rothorn 8, 3960 Sierre</p>
+                <p style="font-size: 15px">🏠Av. du Rothorn 8, 3960 Sierre</p>
               </li>
-            </ul> 
+            </ul>
           </div>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193.4009979656407!2d7.531865938296139!3d46.29373204854465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f1fa9df2397f9%3A0x44de888c57305bac!2sYou&#39;r%20Dance!5e0!3m2!1sfr!2sch!4v1695818897080!5m2!1sfr!2sch" width="700" height="200" style="border:0;margin-top: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193.4009979656407!2d7.531865938296139!3d46.29373204854465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f1fa9df2397f9%3A0x44de888c57305bac!2sYou&#39;r%20Dance!5e0!3m2!1sfr!2sch!4v1695818897080!5m2!1sfr!2sch"
+            style="border: 0; margin-top: 50px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
 
@@ -492,15 +438,48 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script 
-    src="https://polyfill.io/v3/polyfill.min.js?features=default"      
-    ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});
-        </script>
+    <script>
+      ((g) => {
+        var h,
+          a,
+          k,
+          p = "The Google Maps JavaScript API",
+          c = "google",
+          l = "importLibrary",
+          q = "__ib__",
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement("script"));
+              e.set("libraries", [...r] + "");
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set("callback", c + ".maps." + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + " could not load.")));
+              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + " only loads once. Ignoring:", g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta" });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
