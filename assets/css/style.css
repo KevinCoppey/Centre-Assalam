@@ -325,10 +325,17 @@ body {
  * #HEADER
 \*-----------------------------------*/
 
+.logo{
+  left: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+}
+
 .title {
   font-family: "Frankfurter";
   font-style: italic;
-  font-size: 100%;
+  font-size: 50px;
   color: var(--islam-yellow);
 }
 
@@ -819,7 +826,7 @@ footer .logo {
  * responsive for larger than 450px 
  */
 
-@media (min-width: 450px) {
+@media (min-width: 100px) {
   /**
    * CUSTOM PROPERTY 
    */
@@ -850,7 +857,7 @@ footer .logo {
    */
 
   .title {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .navbar {
