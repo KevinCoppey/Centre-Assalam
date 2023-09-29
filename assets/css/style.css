@@ -325,17 +325,10 @@ body {
  * #HEADER
 \*-----------------------------------*/
 
-.logo{
-  left: 0px;
-  right: 0px;
-  width: 100px;
-  height: 100px;
-}
-
 .title {
   font-family: "Frankfurter";
   font-style: italic;
-  font-size: 50px;
+  font-size: 100%;
   color: var(--islam-yellow);
 }
 
@@ -455,6 +448,7 @@ header .container {
 
 .hero-text {
   font-size: 1400;
+
   color: var(--black);
 }
 
@@ -826,7 +820,7 @@ footer .logo {
  * responsive for larger than 450px 
  */
 
-@media (min-width: 100px) {
+@media (min-width: 450px) {
   /**
    * CUSTOM PROPERTY 
    */
@@ -855,9 +849,8 @@ footer .logo {
   /**
    * HEADER 
    */
-
   .title {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .navbar {
@@ -958,7 +951,6 @@ footer .logo {
   /**
    * HEADER
    */
-
   .title {
     font-size: 20px;
   }
@@ -1075,7 +1067,6 @@ footer .logo {
   /**
    * HEADER
    */
-
   .title {
     font-size: 15px;
     padding-left:70px;
