@@ -439,6 +439,7 @@ header .container {
 
 .hero-content {
   text-align: center;
+  width: auto;
 }
 
 .hero-title,
@@ -747,11 +748,15 @@ footer .logo {
 }
 
 .footer-link-list .link-title {
+  color: var(--islam-yellow);
   margin-bottom: 15px;
+}
+.footer-link-list {
+  width: 200%;
 }
 
 .footer-link {
-  color: var(--cool-gray);
+  color: var(--islam-green);
   font-size: var(--fs-6);
   margin-bottom: 10px;
 }
@@ -962,6 +967,7 @@ footer .logo {
 
   .hero-content {
     text-align: center;
+    width: auto;
   }
   .about-bottom-content {
     text-align: left;
@@ -1103,7 +1109,7 @@ footer .logo {
    */
 
   .hero-content {
-    max-width: 550px;
+    max-width: 600px;
   }
 
   .hero-banner {
@@ -1124,7 +1130,7 @@ footer .logo {
    */
 
   .about-top .section-text {
-    max-width: 650px;
+    max-width: 100%;
     margin-inline: auto;
   }
 
