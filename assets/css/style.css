@@ -121,7 +121,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 100px;
 }
 
 ::-webkit-scrollbar-track {
@@ -211,6 +211,7 @@ body {
 .h1,
 .h2,
 .h3 {
+  text-align: center;
   font-weight: var(--fw-600);
   line-height: 1.3;
   text-transform: capitalize;
@@ -480,21 +481,21 @@ header .container {
 }
 
 .about-top {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
 .about .h2 {
   color: var(--islam-yellow);
-}
-
-.about-top .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .about-top .section-text {
   color: var(--white);
   font-size: var(--fs-4);
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .about-list {
@@ -538,6 +539,7 @@ header .container {
 }
 
 .about-bottom .section-title {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -545,6 +547,7 @@ header .container {
   color: var(--white);
   font-size: var(--fs-4);
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .about-bottom .btn-secondary {
@@ -626,7 +629,7 @@ header .container {
 
 .cta-title {
   color: var(--white);
-  font-size: 60px;
+  font-size: 50px;
   font-weight: var(--fw-600);
   line-height: 1.3;
   margin-bottom: 20px;
@@ -729,7 +732,7 @@ footer .logo {
 }
 
 .footer-text {
-  color: var(--rythm);
+  color: black;
   font-size: var(--fs-6);
   margin-bottom: 20px;
 }
@@ -742,7 +745,7 @@ footer .logo {
 
 .social-link {
   color: var(--islam-green);
-  font-size: var(--fs-4);
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
@@ -755,7 +758,7 @@ footer .logo {
   margin-bottom: 15px;
 }
 .footer-link-list {
-  width: 200%;
+  width: 100%;
 }
 
 .footer-link {
@@ -1064,6 +1067,14 @@ footer .logo {
    * REUSED STYLE
    */
 
+  
+
+  .h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  
   .container {
     max-width: 100%;
   }
@@ -1134,6 +1145,7 @@ footer .logo {
   .about-top .section-text {
     max-width: 100%;
     margin-inline: auto;
+    text-align: center;
   }
 
   .about-list {
@@ -1161,7 +1173,8 @@ footer .logo {
    */
 
   .features :is(.section-title, .section-text) {
-    max-width: 650px;
+    width: 100%;
+    text-align: center;
   }
 
   .features-item {
@@ -1177,7 +1190,7 @@ footer .logo {
 
   .feature-item-content {
     width: 50%;
-    text-align: left;
+    text-align: center;
   }
 
   /**
@@ -1281,6 +1294,6 @@ footer .logo {
 
   .features :is(.section-title, .section-text) {
     text-align: center;
-    max-width: 100%;
+    width: 100%;
   }
 }
