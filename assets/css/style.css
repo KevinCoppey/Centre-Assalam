@@ -1,10 +1,6 @@
-/*-----------------------------------*\ 
- * #style.css
-\*-----------------------------------*/
-
-/*-----------------------------------*\ 
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
+/*
+Style sheet for Assalam islamique center
+*/
 
 :root {
   /**
@@ -50,10 +46,6 @@
 
   --transition: 0.25s ease-in-out;
 }
-
-/*-----------------------------------*\ 
- * #RESET
-\*-----------------------------------*/
 
 @font-face {
   font-family: "Frankfurter";
@@ -132,9 +124,6 @@ body {
   background: hsl(0, 0%, 50%);
 }
 
-/*-----------------------------------*\ 
- * #REUSED STYLE
-\*-----------------------------------*/
 .wrapper .icon {
   top: 50px;
   margin: 10px;
@@ -321,10 +310,6 @@ body {
   cursor: pointer;
 }
 
-/*-----------------------------------*\ 
- * #HEADER
-\*-----------------------------------*/
-
 .title {
   font-family: "Frankfurter";
   font-style: italic;
@@ -428,10 +413,6 @@ header .container {
   display: none;
 }
 
-/*-----------------------------------*\ 
- * #HERO
-\*-----------------------------------*/
-
 .hero {
   position: relative;
   padding: 130px 0 140px;
@@ -465,10 +446,6 @@ header .container {
   right: -300px;
   z-index: -1;
 }
-
-/*-----------------------------------*\ 
- * #ABOUT
-\*-----------------------------------*/
 
 .about {
   position: relative;
@@ -555,10 +532,6 @@ header .container {
   margin-inline: auto;
 }
 
-/*-----------------------------------*\ 
- * #FEATURES
-\*-----------------------------------*/
-
 .features {
   padding: 120px 0;
 }
@@ -607,10 +580,6 @@ header .container {
   color: var(--black);
   font-size: var(--fs-4);
 }
-
-/*-----------------------------------*\ 
- * #CTA
-\*-----------------------------------*/
 
 .cta {
   margin-top: 100px;
@@ -661,10 +630,6 @@ header .container {
   margin-inline: auto;
 }
 
-/*-----------------------------------*\ 
- * #CONTACT
-\*-----------------------------------*/
-
 .contact {
   margin-bottom: 120px;
 }
@@ -710,10 +675,6 @@ textarea {
   height: 100px;
   resize: vertical;
 }
-
-/*-----------------------------------*\ 
- * #FOOTER
-\*-----------------------------------*/
 
 footer {
   background: var(--white-2);
@@ -791,10 +752,6 @@ footer .logo {
   color: var(--french-rose);
 }
 
-/*-----------------------------------*\ 
- * #GO TO TOP
-\*-----------------------------------*/
-
 .go-top {
   position: fixed;
   bottom: 30px;
@@ -820,10 +777,6 @@ footer .logo {
   visibility: visible;
   pointer-events: all;
 }
-
-/*-----------------------------------*\ 
- * #RESPONSIVE
-\*-----------------------------------*/
 
 /**
  * responsive for larger than 450px 
@@ -1067,14 +1020,11 @@ footer .logo {
    * REUSED STYLE
    */
 
-  
-
-  .h1{
+  .h1 {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  
   .container {
     max-width: 100%;
   }
